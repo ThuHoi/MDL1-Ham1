@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check mảng đối xứng</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let arr1 = [1,2,3,4,3,2,1];
+    let arr2 = [1,2,3,4,4,3,2,1];
+    function check(a) {
+    for (let i = 0; i < parseInt(a.length/2) ; i++) {
+        if (a[i] !== a[a.length - 1 - i]) {
+            return false;
+        }
+    }
+        return true;
+    }
+    console.log(check(arr1));
+    console.log(check(arr2));
+
+
+</script>
